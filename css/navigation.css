@@ -1,0 +1,105 @@
+
+
+/* .navigation {width: 100%;height: 100vh;position: absolute;z-index: 3;overflow: hidden;} */
+.navigation {position: absolute;z-index: 3;}
+.navigation img{width: 110px;position: relative;z-index: 1;}
+
+.nav-content {background: #343434;float: right;align-items: center;position: fixed;top: 0;text-align: right;
+padding: 0;right: 0;width: 90%;height: 100vh;-webkit-transform: translate3d(100%,0,0);
+transform: translate3d(100%,0,0);-webkit-transition: -webkit-transform .3s ease-in-out;
+transition: -webkit-transform .3s ease-in-out;transition: transform .3s ease-in-out;
+transition: transform .5s ease-in-out,-webkit-transform .3s ease-in-out;z-index: 1;z-index: 3;
+}
+.nav-content.opened{visibility: visible; -webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);
+-webkit-transition: -webkit-transform .3s ease-in-out; transition: -webkit-transform .3s ease-in-out;
+transition: transform .3s ease-in-out;transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+}
+
+/* .navigation i.fa-bars {font-size: 32px; background: #a3f7bf; width: 60px; text-align: center; line-height: 60px; 
+position: fixed;right: 0; transition: right 0.4s;visibility: visible;z-index: 2;}
+.navigation i.fa-bars.closed{visibility: hidden;} */
+
+.navigation i.fa-bars {font-size: 32px; background: #8b8996; width: 60px; text-align: center; line-height: 60px; 
+position: fixed;right: 0; transition: right 0.3s;visibility: visible;z-index: 2;}
+.navigation i.fa-bars:hover {background: #595661;cursor: pointer;}
+.fa-bars:before {}
+.navigation i.fa-bars.closed{right: -60px;}
+
+.move{overflow-y: scroll;}
+
+.nav-content .main-content{margin: 0;z-index: 1;position: relative;width: 100%;right: 0;background: #343434;padding: 0;height: 100vh;}
+
+
+
+.nav-content ul{text-align: left;height: 100vh;}
+
+.nav-content .mobile-nav{margin: 0 auto;text-align: center;color: #fbfbfb;position: relative;}
+.nav-content .mobile-nav .menu-bar{ margin: 0; line-height: 60px; border-bottom: 1px solid #343434;}
+.nav-content .mobile-nav .menu-bar .fa-times{position: absolute;right: 0;line-height: 60px;width: 60px;font-size: 22px; z-index: 1;font-weight: 200;}
+.nav-content .mobile-nav .current-position{height: 40px;line-height: 40px;margin: 0;border-bottom: 1px solid #343434;padding: 0px 0 0px 20px;display: flex;}
+.nav-content .mobile-nav .current-position i{display: none;}
+.nav-content .mobile-nav .current-position i.show{display: block;line-height: 40px;font-weight: 200;}
+.nav-content .mobile-nav .current-position-val{padding: 0 0 0 20px;}
+
+
+.nav-content .main-content li{padding: 10px 0 10px 40px;list-style: none;line-height: 40px;font-size: 16px;
+   font-weight: 500;color: #fbfbfb;border-bottom: 1px solid #343434;text-align: left;}
+.nav-content .main-content li:last-of-type{border-bottom: initial; border-bottom: inherit;}
+
+
+.nav-content .dropdown-link{}
+.nav-content .dropdown-link.invisible{display: none;}
+.nav-content .dropdown-content{display: none;}
+.nav-content .dropdown-content.opened{display: block;top: 0px;position: absolute;left: 0;width: 100%;height: 100vh;background: #393e46;z-index: 1;padding: 0;}
+.nav-content .dropdown-content.opened li{padding: 10px 0 10px 50px;}
+.nav-content .dropdown-content.opened li span{line-height: 22px;display: inline-block;}
+
+
+.nav-content li i{margin: 0 20px 0px 0;float: right; line-height: 40px; transform: rotate(270deg);}
+.nav-content li a{display: inline-block;color: #fbfbfb; text-decoration: none;width: 100%;text-align: left;}
+.nav-content li:hover {cursor: pointer;}
+.nav-content li:hover a{ color: #8b8996;}
+
+
+@media screen and (min-width: 768px){
+
+   .nav-content{width: 60%;}
+
+}
+
+
+
+
+@media screen and (min-width: 1000px){
+
+}
+
+
+@media screen and (min-width: 1200px){
+
+   .navigation{left: 0;right: 0;}
+   
+   .nav-content .mobile-nav{display: none;}
+   .nav-content{transform: translate3d(0,0,0);width: auto;height: auto;background: transparent;    position: absolute;
+      right: inherit;
+      right: initial;
+      left: 480px;}
+   .navigation i.fa-bars{display: none;}
+   .nav-content .main-content{display: flex;height: 60px;background: transparent;}
+   .nav-content ul{height: auto;}
+   .nav-content .dropdown-content.opened{height: auto;position: absolute;width: auto;top: 60px;}
+   .nav-content .dropdown-content.opened li{padding: 10px;line-height: 22px;}
+   .nav-content .main-content li{border: none;position: relative;padding: 10px; margin: 0 10px;font-size: 14px;}
+   .nav-content li i{transform: rotate(0deg);margin: 0 0 0 15px;}
+
+
+}
+
+@media screen and (min-width: 1340px){
+}
+
+@media screen and (min-width: 1900px){
+
+   .nav-content{left: 570px;}
+
+}
