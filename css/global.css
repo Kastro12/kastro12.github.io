@@ -22,16 +22,15 @@ p.center{text-align: center;}
 
 .title-wrap{text-align: center;}
 
-a{text-decoration: none;color: #8b8996;font-weight: 500;}
-a:hover{color: #595661;text-decoration-color: #595661;}
+a{text-decoration: none;color: #9286d0;font-weight: 500;}
+a:hover{color: #7d73af;text-decoration-color: #7d73af;}
 
 .nav-logo{position: absolute;}
 
 .sitelink{position: relative;top: -30px;}
 /* .sitelink a{color: #888;}
 .sitelink a:hover{color: #a3f7bf;} */
-h4 a{color: #343434;text-decoration-color: #a3f7bf;}
-h4 a:hover{color: #a3f7bf;}
+h4 a{font-weight: 600;}
 .light-skill{color: #ccc;}
 /* .sitelink a:hover{text-decoration: unset;} */
 
@@ -87,9 +86,12 @@ h2{padding: 60px 20px 30px 20px;background: #fbfbfb;}
 
 @media screen and (min-width: 992px){
     .projects.section .design-boxes-wrap{display: flex;flex-direction: row;flex-wrap: wrap;}
-    .projects.section .design-boxes-wrap .box{}
-    .projects.section .design-boxes-wrap .box:nth-of-type(odd){width: 48%;padding: 0 2% 0 0;}
-    .projects.section .design-boxes-wrap .box:nth-of-type(even){width: 48%;padding: 0 0 0 2%;}
+    .projects.section .design-boxes-wrap .box{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
+        border: 1px solid #e6e6e6;}
+    .projects.section .design-boxes-wrap .box:hover{border: 1px solid #9f86d0;box-shadow: 0px 0px 3px #9f86d0;}
+    .projects.section .design-boxes-wrap .box:nth-of-type(odd){width: 48%;margin: 0 2% 20px 0;}
+    .projects.section .design-boxes-wrap .box:nth-of-type(even){width: 48%;margin: 0 0 20px 2%;}
+    .projects.section .design-boxes-wrap .box p{padding: 10px;}
 }
 
 @media screen and (min-width: 1200px){
@@ -113,6 +115,9 @@ h2{font-size: 32px;padding: 80px 30px 30px 30px;}
 .info-wrap .info{width: 60%;margin: 0;padding: 80px 0 0 60px;float: left;}
 .info-wrap .about{padding: 20px 20px 0 60px;height: auto;display: table;margin: 0;}
 .projects.section{margin: 0 0 80px 0;}
+
+.projects.section .design-boxes-wrap .box:nth-of-type(odd){width: 260px;margin: 0 12.5px 25px 0;}
+.projects.section .design-boxes-wrap .box:nth-of-type(even){width: 260px;margin: 0 0 25px 12.5px;}
 }
 
 @media screen and (min-width: 1300px){
@@ -121,6 +126,10 @@ h2{font-size: 32px;padding: 80px 30px 30px 30px;}
 
 .info-wrap .picture{width: 440px;}
 .info-wrap .about{width: 58%;}
+
+.projects.section .design-boxes-wrap .box:nth-of-type(odd){width: 285px;margin: 0 12.5px 25px 0;}
+.projects.section .design-boxes-wrap .box:nth-of-type(even){width: 285px;margin: 0 0 25px 12.5px;}
+
 }
 
 

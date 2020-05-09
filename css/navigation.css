@@ -58,7 +58,7 @@ position: fixed;right: 0; transition: right 0.3s;visibility: visible;z-index: 2;
 .nav-content li i{margin: 0 20px 0px 0;float: right; line-height: 40px; transform: rotate(270deg);}
 .nav-content li a{display: inline-block;color: #fbfbfb; text-decoration: none;width: 100%;text-align: left;}
 .nav-content li:hover {cursor: pointer;}
-.nav-content li:hover a{ color: #8b8996;}
+.nav-content li:hover a{ color: #7d73af;}
 
 
 @media screen and (min-width: 768px){
