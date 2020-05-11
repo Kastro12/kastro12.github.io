@@ -2,6 +2,14 @@
 
 /* .navigation {width: 100%;height: 100vh;position: absolute;z-index: 3;overflow: hidden;} */
 .navigation {position: absolute;z-index: 3;}
+
+
+@keyframes example {
+   from {background-color: red;}
+   to {background-color: yellow;}
+ }
+.navigation.fixed{position: fixed;background: #343434;height: 60px;}
+
 .navigation img{width: 110px;position: relative;z-index: 1;}
 
 .nav-content {background: #343434;float: right;align-items: center;position: fixed;top: 0;text-align: right;
@@ -15,9 +23,6 @@ transition: transform .5s ease-in-out,-webkit-transform .3s ease-in-out;z-index:
 transition: transform .3s ease-in-out;transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
 }
 
-/* .navigation i.fa-bars {font-size: 32px; background: #a3f7bf; width: 60px; text-align: center; line-height: 60px; 
-position: fixed;right: 0; transition: right 0.4s;visibility: visible;z-index: 2;}
-.navigation i.fa-bars.closed{visibility: hidden;} */
 
 .navigation i.fa-bars {font-size: 32px; background: #8b8996; width: 60px; text-align: center; line-height: 60px; 
 position: fixed;right: 0; transition: right 0.3s;visibility: visible;z-index: 2;}
@@ -44,7 +49,8 @@ position: fixed;right: 0; transition: right 0.3s;visibility: visible;z-index: 2;
 
 .nav-content .main-content li{padding: 10px 0 10px 40px;list-style: none;line-height: 40px;font-size: 16px;
    font-weight: 500;color: #fbfbfb;border-bottom: 1px solid #343434;text-align: left;}
-.nav-content .main-content li:last-of-type{border-bottom: initial; border-bottom: inherit;}
+  
+
 
 
 .nav-content .dropdown-link{}

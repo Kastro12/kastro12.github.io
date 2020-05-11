@@ -92,68 +92,23 @@ function onScroll(event) {
 } /* END onScroll */
 
 
-/* IF ADD TO CART IS ON VIEWPORT */
-$(window).on('resize scroll', __throttle(function (event) {
-    if ($('#main-buy-field').isInViewport()) {
-        $('#board-8th #buy-now').css({
-            'opacity': '0.5',
-            'cursor': 'not-allowed'
-        });
-    } else {
-        /* BUY BUTTON */
-        $('#board-8th #buy-now').css({
-            'opacity': '',
-            'cursor': ''
-        });
-    }
-}, 250)); /* end IF ADD TO CART IS ON VIEWPORT */
 
-// var whatIsInBoxTopPosition = $("#board-8th .what-is-in-box").height();
-// var buySectionH = $('#main-buy-field').height();
 
-// $('#board-8th #buy-now').click(function () {
 
-// if (!$('#board-8th #main-buy-field').isInViewport()) {
-//       if ($('#board-8th #board-body section').last().hasClass('active')) {
-//           if($(window).width() < 992){
-//             $('#board-8th #board-body section').last().removeClass('active');
-//             $('#board-8th #board-body section#board-overview').addClass('active');
-//           }else{
-//             $('#board-tabs h1').trigger('click');
-//           }
-          
-//         //   $('#board-tabs li.board-overview').trigger('click');
-//       }
+    // if ($('#main-buy-field').isInViewport()) {} else {}
 
-//       if($(window).width() < 992 )
-//       {
-//         $('html, body').stop().animate({
-//           scrollTop: $("#board-8th #main-buy-field").offset().top -topH
-//      }, 500, 'swing');
-//       }
-//       else if($(window).width() >= 992 && $(window).width()<1900){
-//         $('html, body').stop().animate({
-//           scrollTop: $("#board-8th #main-buy-field").offset().top - (screen.height - buySectionH)
-//      }, 500, 'swing');
-//       }
-//       else if($(window).width() >= 1900 ){
-//         $('html, body').stop().animate({
-//           scrollTop: $("#board-8th #main-buy-field").offset().top - (whatIsInBoxTopPosition + buySectionH - 100)
-//      }, 500, 'swing');
-//       }
-//       setTimeout(function () {
-//           $('#board-8th #buy-now').css({
-//               'opacity': '0.5',
-//               'cursor': 'not-allowed'
-//           });
-//       }, 500);
-// }
+// $(window).on('scroll', function(){
+//     var iWrapH = $('.info-wrap').height();
+//     if($(window).scrollTop() >= iWrapH){
+//     //    $('.navigation').addClass('fixed');
+//        $('.navigation').removeClass('large');
+//     }else{
+//         // $('.navigation').removeClass('fixed');
+//         $('.navigation').addClass('large');
+//     }
+// });
 
-// setTimeout(function () {
-//     $('#board-8th #board-tabs li').removeClass("active");
-//   }, 500);
 
-// }); /* END BUY BUTTON */
 
 
 
