@@ -4,6 +4,17 @@ body{margin: 0;font-family: 'Montserrat',Arial,Helvetica,sans-serif; color: #343
 
 p{line-height: 24px;font-size: 16px;margin: 0;}
 
+.languages{position: absolute;display: flex;padding: 10px 0 10px 40px;z-index: 3;}
+.languages div{display: flex;flex-direction: column;line-height: 0;cursor: pointer;}
+.languages div .link-img{width: 24px;height: 14.4px;}
+.languages div:last-of-type .link-img{background: url('..//images/Serbia-flag.jpg');background-size: cover;}
+.languages div:first-of-type .link-img{background: url('..//images/britain-flag.jpg');background-size: cover;}
+.languages .lang-line{width: 2px; height: 24px;background: #fff;position: relative; top: 8px;
+    cursor: default;    margin: 0 10px;}
+.languages p{color: #fff;font-size: 12px;text-align: center;}
+.languages img{width: 24px;margin: 0 auto;}
+
+
 .standard-wrap{margin: 0 auto; padding: 0 20px;}
 .standard-wrap-large{margin: 0 auto;}
 .standard-wrap-min{padding: 0 20px;}
@@ -25,12 +36,20 @@ a:hover{color: #7d73af;text-decoration-color: #7d73af;}
 .nav-logo{position: absolute;width: 50px;left: 10px;top: 10px;}
 .sitelink{position: relative;top: -30px;}
 
+
+.info-wrap a{color: #fff;}
+.info-wrap a:hover{color: #7d73af;}
+
 h4 a{font-weight: 600;}
 .light-skill{color: #ccc;}
 
 .double-txt{margin-bottom: 15px;}
 .double-txt span:first-of-type{display: block;font-weight: 600;}
 .section .double-txt:last-of-type{margin-bottom: 0;}
+
+.double-txt.icons{}
+.double-txt.icons a{margin-right: 10px;}
+.double-txt.icons i{font-size: 22px;}
 
 .info-wrap {color: #fbfbfb;background: #343434;padding: 0 0 20px 0;}
 .info-wrap .picture{line-height: 0;}
@@ -72,7 +91,6 @@ h2{padding: 60px 20px 30px 20px;background: #fbfbfb;}
 
 .standard-col6:first-of-type{padding: 0 20px 0 0;}
 .standard-col6:last-of-type{padding: 0 0 0 20px;}
-
 }
 
 @media screen and (min-width: 992px){
@@ -105,6 +123,8 @@ h2{font-size: 32px;padding: 80px 30px 30px 30px;}
 .projects.section{margin: 0 0 80px 0;}
 .projects.section .design-boxes-wrap .box:nth-of-type(odd){width: 260px;margin: 0 12.5px 25px 0;}
 .projects.section .design-boxes-wrap .box:nth-of-type(even){width: 260px;margin: 0 0 25px 12.5px;}
+
+.languages{position: absolute;right: 0;top: 5px;}
 }
 
 @media screen and (min-width: 1300px){
@@ -116,6 +136,8 @@ h2{font-size: 32px;padding: 80px 30px 30px 30px;}
 
 .projects.section .design-boxes-wrap .box:nth-of-type(odd){width: 285px;margin: 0 12.5px 25px 0;}
 .projects.section .design-boxes-wrap .box:nth-of-type(even){width: 285px;margin: 0 0 25px 12.5px;}
+.languages{}
+
 }
 
 

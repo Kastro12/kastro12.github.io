@@ -107,6 +107,15 @@ function onScroll(event) {
 //         $('.navigation').addClass('large');
 //     }
 // });
+if($('.navigation .languages').hasClass('birain-lang')){ 
+    $('#serbia').on('click',function(){
+        window.location = 'index-rs.html';
+    });
+} else if($('.navigation .languages').hasClass('serbia-lang')){ 
+    $('#britain').on('click',function(){
+        window.location = 'index.html';
+    });
+}
 
 
 
