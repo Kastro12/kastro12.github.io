@@ -101,6 +101,9 @@ h2{padding: 60px 20px 30px 20px;background: #fbfbfb;}
 .projects.section .design-boxes-wrap .box:nth-of-type(odd){width: 48%;margin: 0 2% 20px 0;}
 .projects.section .design-boxes-wrap .box:nth-of-type(even){width: 48%;margin: 0 0 20px 2%;}
 .projects.section .design-boxes-wrap .box p{padding: 10px;}
+
+.boxes-wrap .box{margin-bottom: 20px;}
+
 }
 
 @media screen and (min-width: 1200px){
@@ -125,6 +128,10 @@ h2{font-size: 32px;padding: 80px 30px 30px 30px;}
 .projects.section .design-boxes-wrap .box:nth-of-type(even){width: 260px;margin: 0 0 25px 12.5px;}
 
 .languages{position: absolute;right: 0;top: 5px;}
+
+
+
+
 }
 
 @media screen and (min-width: 1300px){
